@@ -1,0 +1,40 @@
+*{
+    padding: 0;
+    margin: 0;
+    font-family: sans-serif
+}
+
+.box{
+    height: 500px;
+    width: 700px;
+    box-shadow: 0px 3px 14px 1px #33333326;
+    margin: auto;
+    margin-top: 14vh;
+    border-radius: 4px;
+    overflow: hidden;
+}
+
+.box .content{
+    height: 68%;
+    padding: 30px;
+    overflow: auto;
+    
+}
+.box .footer{
+    height: 20%;
+    padding: 30px;
+    background: #eee
+}
+.box .footer .btn{
+    border:none;
+    border-radius: 5px;
+    padding: 10px;
+    font-size: 18px;
+    border: 1px solid #ccc;
+    outline: none;
+    background: #FF9800;
+    color: #fff;
+}
+.box .footer .disabled{
+    background: #ccc
+}
