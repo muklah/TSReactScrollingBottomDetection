@@ -4,16 +4,20 @@ import * as ReactDOM from 'react-dom';
 class App extends React.Component {
   constructor() {
     super();
+    // state of button
     this.state = {
       isDisable: true
     }
   }
 
   componentDidMount() {
+      // get section of terms by class id
     let content = document.getElementsByClassName('content')[0]
 
+    // get height of that section
     let contentHeight = content.clientHeight;
 
+    // listener to change the state of button when scrolling to bottom of section
     content.addEventListener('scroll', (e) => {
       if (e.target.scrollTop > contentHeight) {
         this.setState({ isDisable: false })
